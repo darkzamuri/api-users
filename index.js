@@ -8,7 +8,7 @@ const path = require('path'); // Agrega esta línea para importar el módulo pat
 // Crear la aplicación Express
 const app = express();
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', __dirname);
 // Configurar bodyParser para manejar solicitudes JSON
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
